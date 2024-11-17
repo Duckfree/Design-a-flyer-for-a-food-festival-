@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: radial-gradient( circle 817.6px at 10% 20%,  rgba(178,34,34,1) 0%, rgba(255,87,51,1) 41.9%, rgba(255,165,0,1) 100.2% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flyer {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6347;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.main-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.details {
+    padding: 20px;
+    text-align: left;
+}
+
+.details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.details p {
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+}
+
+.footer p {
+    font-size: 1.2em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
